@@ -1,0 +1,91 @@
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#drag-area {
+    padding: 20px;
+    text-align: center;
+}
+
+#features-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature {
+    margin: 10px;
+}
+
+.draggable {
+    cursor: pointer;
+}
+
+#potato {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #45a049;
+}
+
+#problem2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#shrink-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#shrink-button:hover {
+    background-color: #45a049;
+}
+
+#full {
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+#coffee {
+    width: 100%;
+    height: 100%;
+}

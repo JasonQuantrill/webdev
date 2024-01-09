@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Registration</title>
+        <link rel="stylesheet" type="text/css" href="lab07b.css">
+    </head>
+    <body>
+        <form action="https://www2.scs.torontomu.ca/~jquantri/cgi-bin/lab07b.cgi" method="post">
+            <h2>Input user information</h2>
+            First Name: 
+            <input type="text" name="first" /><br>
+            Last Name:
+            <input type="text" name="last" /><br>
+            Street Address:
+            <input type="text" name="address" /><br>
+            City:
+            <input type="text" name="city" /><br>
+            Postal Code:
+            <input type="text" name="postal" /><br>
+            Province:
+            <select name="province">
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="YT">Yukon</option>
+            </select><br>
+            Phone Number (Format: 1234567890):
+            <input type="text" name="phone" /><br>
+            Email Address:
+            <input type="text" name="email" /><br>
+            Photo:
+            <input type="file" name="photo" /><br>
+            <input type="submit" />
+        </form>
+    </body>
+</html>
+

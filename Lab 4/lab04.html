@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="lab04.css">
+</head>
+<body>
+    <h1>Lab 04</h1>
+
+    <div class="problem" id="problem1">
+        <h2>Problem 1</h2>
+        <h3>User Input Form</h3>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" required><br><br>
+
+            <button type="button" onclick="validateForm()">Validate</button>
+        </form>
+
+        <h3>Reformatted Form</h3>
+        <div id="output"></div>
+    </div>
+
+    <div class="problem" id="problem2">
+        <h2>Problem 2</h2>
+        <h3>Character Counter</h3>
+        <textarea id="textarea" oninput="countCharacters()"></textarea>
+        <div id="charCount">Character Count: 0</div>
+        <div id="letterCount">Letter Count: 0</div>
+    </div>
+
+    <div class="problem" id="problem3">
+        <h2>Problem 3</h2>
+        <h3>Add a Bookmark</h3>
+        <form id="bookMarks">
+            <label for="bookmark">URL:</label>
+            <input type="text" id="url" required><br><br>
+
+            <button type="button" onclick="createBookmark(document.getElementById('url').value)">Add Bookmark</button>
+        </form>
+
+        <h3>Bookmarks List</h3>
+        <ul id="bookmarksList">
+        </ul>
+    </div>
+
+    
+    
+
+    <script src="lab04.js"></script>
+</body>
+</html>

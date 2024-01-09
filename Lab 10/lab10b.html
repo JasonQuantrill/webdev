@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Information Form</title>
+</head>
+<body>
+    <form action="https://www2.scs.torontomu.ca/~jquantri/cgi-bin/lab10r.cgi" method="post">
+        <label for="city">City Name:</label><br>
+        <input type="text" id="city" name="city"><br>
+
+        <label for="state">Province/State:</label><br>
+        <input type="text" id="state" name="state"><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country"><br>
+
+        <label for="picurl">Picture URL:</label><br>
+        <input type="url" id="picurl" name="picurl"><br>
+
+        <button type="submit">Submit to Ruby</button>
+        <button type="submit" formaction="https://www2.scs.torontomu.ca/~jquantri/cgi-bin/lab10p.cgi">Submit to Python</button>
+    </form>
+
+    <script>
+        // Copy values from the first form to the second form before submitting
+        document.forms[1].onsubmit = function() {
+            document.getElementById('city').value = document.forms[0].city.value;
+            document.getElementById('state').value = document.forms[0].state.value;
+            document.getElementById('country').value = document.forms[0].country.value;
+            document.getElementById('picurl').value = document.forms[0].picurl.value;
+        };
+    </script>
+</body>
+</html>
